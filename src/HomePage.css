@@ -44,7 +44,7 @@
   }
   .Menu-button {
     grid-area: Menu;
-    width: 70%;
+    width: 65px;
     height: 23px;
     display: flex;
     flex-direction: column;
