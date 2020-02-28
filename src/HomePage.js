@@ -9,7 +9,7 @@ function HomePage() {
             <div
                 className="inner-container">
                 <header className="App-header">
-                    <div className="Logo">O</div>
+                    <div className="Logo"></div>
                     <Link to="/contact">
                         <button className="Contact-button">CONTACT</button>
                     </Link>
