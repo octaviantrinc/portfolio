@@ -45,7 +45,7 @@
   .Menu-button {
     grid-area: Menu;
     width: 65px;
-    height: 23px;
+    height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,7 +62,7 @@
     transition: ease 0.3s;
   }
   .Line {
-    height: 9px;
+    height: 10px;
     width: 75%;
     background-color: black;
     align-self: center;
