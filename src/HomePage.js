@@ -40,6 +40,9 @@ function HomePage() {
                 <footer className="App-footer">
                     <div className="Contact">
                         <h2 className="contact font">Contact</h2>
+                        <h5 className="low url">iamoctavian.com</h5>
+                    </div>
+                    <div>
                     </div>
                 </footer>
             </div>

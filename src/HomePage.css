@@ -41,6 +41,7 @@
     font-family: 'Montserrat';
     font-weight: 600;
     border: none;
+    transition: ease 0.4s;
   }
   .Menu-button {
     grid-area: Menu;
@@ -50,16 +51,16 @@
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
-    transition: ease 0.3s;
+    transition: ease 0.4s;
   }
   .Menu-button:hover {
     opacity: 0.7;
     transform: scale(0.85);
-    transition: ease 0.3s;
+    transition: ease 0.4s;
   }
   .Contact-button:hover {
     opacity: 0.7;
-    transition: ease 0.3s;
+    transition: ease 0.4s;
   }
   .Line {
     height: 10px;
@@ -84,13 +85,13 @@
   }
   
   .moving {
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-name: downup;
   }
   .moving.hi {
       font-family: 'Montserrat';
-      font-weight: 600;
-      font-size: 33px;
+      font-weight: 700;
+      font-size: 32px;
   }
   .moving.iam {
       font-family: 'Open Sans';
@@ -112,10 +113,11 @@
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: small;
+    transition: ease 0.4s;
   }
   .moving.connect:hover {
     opacity: 0.7;
-    transition: ease 0.3s;
+    transition: ease 0.4s;
   }
   @keyframes downup {
     from {
@@ -173,10 +175,16 @@
     padding-top: 70px;
     z-index: 1;
   }
-  .contact.font{
+  .contact.font {
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 22px;
+  }
+  .low.url {
+    padding-top: 110px;
+    font-family: 'Open Sans';
+    font-size: small;
+
   }
 
   .App-footer {
