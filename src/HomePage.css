@@ -1,192 +1,233 @@
 .App {
-    position: absolute;
-    top: 0;
-    height: auto;
-    width: 100vw;
-  }
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 100vw;
+}
   
-  .inner-container {
-    width: 100vw;
-    text-align: center;
-  }
+.inner-container {
+  width: 100vw;
+  text-align: center;
+}
   
-  .App-header {
+.App-header {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr;
   grid-template-areas: "Logo . Contact Menu";
   height: 70px;
   margin-bottom: 100px;
   justify-content: center;
-  }
-  .Logo,
-  .Contact-button,
-  .Menu-button {
-    align-self: center;
-  }
-  .Logo {
-    grid-area: Logo;
-  }
+}
+
+.Logo,
+.Contact-button,
+.Menu-button {
+  align-self: center;
+}
+
+.Logo {
+  grid-area: Logo;
+}
+
 .App-header a {
-    grid-area: Contact;
+  grid-area: Contact;
 }
 
 .Contact-button {
-    font-size: 9px;
-    background-color: var(--royalBlue);
-    padding: 10px;
-    color: white;
-    width: 65px;
-    align-self: center;
-    margin-top: 20px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    border: none;
-    transition: ease 0.4s;
-  }
-  .Menu-button {
-    grid-area: Menu;
-    width: 65px;
-    height: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: auto;
-    transition: ease 0.4s;
-  }
-  .Menu-button:hover {
-    opacity: 0.7;
-    transform: scale(0.85);
-    transition: ease 0.4s;
-  }
-  .Contact-button:hover {
-    opacity: 0.7;
-    transition: ease 0.4s;
-  }
-  .Line {
-    height: 10px;
-    width: 75%;
-    background-color: black;
-    align-self: center;
-  }
+  font-size: 9px;
+  background-color: var(--royalBlue);
+  padding: 10px;
+  color: white;
+  width: 65px;
+  align-self: center;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  border: none;
+  transition: ease 0.4s;
+}
+
+.Menu-button {
+  grid-area: Menu;
+  width: 65px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  transition: ease 0.4s;
+}
+
+.Menu-button:hover {
+  opacity: 0.7;
+  transform: scale(0.85);
+  transition: ease 0.4s;
+}
+
+.Contact-button:hover {
+  opacity: 0.7;
+  transition: ease 0.4s;
+}
+
+.Line {
+  height: 10px;
+  width: 75%;
+  background-color: black;
+  align-self: center;
+}
   
-  .App-body {
+.App-body {
   background-color: white;
-  }
+}
   
-  .Welcome {
-    box-sizing: border-box;
-    background-color: var(--lightGrey);
-    width: 88%;
-    margin: 0 auto -50px;
-    height: auto;
-    z-index: 2;
-    position: relative;
-    padding: 30px;
-  }
+.Welcome {
+  box-sizing: border-box;
+  background-color: var(--lightGrey);
+  width: 88%;
+  margin: 0 auto -50px;
+  height: auto;
+  z-index: 2;
+  position: relative;
+  padding: 30px;
+}
   
-  .moving {
-    animation-duration: 1s;
-    animation-name: downup;
-  }
-  .moving.hi {
-      font-family: 'Montserrat';
-      font-weight: 700;
-      font-size: 32px;
-  }
-  .moving.iam {
-      font-family: 'Open Sans';
-      font-weight: 400;
-      font-size: small;
-  }
-  .moving.need {
-      font-family: 'Open Sans';
-      font-weight: 400;
-      font-size: small;
-  }
-  .moving.connect {
-    color: var(--royalBlue);
-    width: auto;
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-    margin: auto;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: small;
-    transition: ease 0.4s;
-  }
-  .moving.connect:hover {
-    opacity: 0.7;
-    transition: ease 0.4s;
-  }
-  @keyframes downup {
-    from {
-      opacity: 0.8;
-      transform: translateY(30px) scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-  }
-  
-  .Skills {
-    background-color: black;
-    height: 250px;
-    color: white;
-    padding-top: 70px;
-  }
-  .skills.font {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 22px;
-  }
-  .Work {
-    background-color: white;
-    color: black;
-    height: 550px;
-    padding: 20px;
-  }
-  .work.font {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 22px;
+.moving {
+  animation-duration: 1s;
+  animation-name: downup;
+}
 
-  }
-  .About-me {
-    box-sizing: border-box;
-    background-color: var(--lightGrey);
-    height: 300px;
-    width: 88%;
-    margin: 0 auto -50px;
-    z-index: 2;
-    position: relative;
-    padding: 20px;
-  }
-  .about.font {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 22px;
-  }
-  .Contact {
-    background-color: black;
-    height: 200px;
-    color: white;
-    padding-top: 70px;
-    z-index: 1;
-  }
-  .contact.font {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 22px;
-  }
-  .low.url {
-    padding-top: 110px;
-    font-family: 'Open Sans';
-    font-size: small;
+.moving.hi {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 32px;
+}
 
-  }
+.moving.iam {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: small;
+}
 
-  .App-footer {
+.moving.need {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: small;
+}
+
+.moving.connect {
+  color: var(--royalBlue);
+  width: auto;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  margin: auto;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: small;
+  transition: ease 0.4s;
+}
+
+.moving.connect:hover {
+  opacity: 0.7;
+  transition: ease 0.4s;
+}
+
+@keyframes downup {
+  from {
+    opacity: 0.8;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
   
-  }
+.Skills {
+  background-color: black;
+  height: 250px;
+  color: white;
+  padding-top: 70px;
+}
+
+.skills.font {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.skillsIcons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans';
+  font-size: small;
+  font-weight: 400;
+}
+
+.Work {
+  background-color: white;
+  color: black;
+  height: 550px;
+  padding: 20px;
+}
+
+.work.font {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.About-me {
+  box-sizing: border-box;
+  background-color: var(--lightGrey);
+  height: 300px;
+  width: 88%;
+  margin: 0 auto -50px;
+  z-index: 2;
+  position: relative;
+  padding: 20px;
+}
+
+.about.font {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.Contact {
+  background-color: black;
+  height: 150px;
+  color: white;
+  padding-top: 70px;
+  z-index: 1;
+}
+
+.contact.font {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  padding: 23px;
+}
+
+.iconC {
+  height: 35px;
+  width: 35px;
+}
+
+.low.url {
+  padding-top: 10px;
+  font-family: 'Open Sans';
+  font-size: small;
+  margin: 0;
+}
+
+.App-footer {
+  
+}
