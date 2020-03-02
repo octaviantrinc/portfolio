@@ -15,6 +15,7 @@ import iconNodeJS from './iconNodeJS.svg';
 import iconGit from './iconGit.svg';
 import iconGA from './iconGA.svg';
 import iconSketch from './iconSketch.svg';
+import iconGithubSkills from './iconGithubSkills.svg';
 
 //import iconX from './iconX';
 
@@ -58,7 +59,7 @@ function HomePage() {
                             <h5>NodeJS</h5>
                             <img className="iconGit" src={iconGit} alt="iconGit" />
                             <h5>Git</h5>
-                            <img className="iconGithub" src={iconGithub} alt="iconGithub" />
+                            <img className="iconGithubSkills" src={iconGithubSkills} alt="iconGithubSkills" />
                             <h5>Github</h5>
                             <img className="iconGA" src={iconGA} alt="iconGA" />
                             <h5>Google Analytics</h5>

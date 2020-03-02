@@ -158,12 +158,13 @@
 
 .skillsIcons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
   font-family: 'Open Sans';
   font-size: small;
   font-weight: 400;
+  padding: 5px;
 }
 
 .Work {
