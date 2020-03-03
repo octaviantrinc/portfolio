@@ -65,6 +65,9 @@ function HomePage() {
                             <h5>Google Analytics</h5>
                             <img className="iconSketch" src={iconSketch} alt="iconSketch" />
                             <h5>Sketch</h5>
+                            <h5>MongoDB</h5>
+                            <h5>Express</h5>
+                            <h5>GraphQL</h5>
                         </div>
                     </div>
                     <div className="Work">
